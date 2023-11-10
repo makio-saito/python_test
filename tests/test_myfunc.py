@@ -6,4 +6,12 @@ def test_add():
 
 
 def test_sub():
-    assert sub(2, 1) == 0
+    assert sub(2, 1) == 1
+
+
+class TestCase:
+    def test_true(self):
+        assert True
+
+    def test_add_zero(self):
+        assert add(1, 0) == 1
