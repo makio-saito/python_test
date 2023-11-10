@@ -29,7 +29,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install zip
       run: |
-        apt install zip
+        sudo apt-get install zip
     - name: Test with pytest
       run: |
         pytest tests -v --cov=src --cov-report=html
