@@ -36,5 +36,5 @@ jobs:
         zip htmlcov.zip htmlcov -r
     - uses: actions/upload-artifact@v2
       with:
-        name: htmlcov.zip
-        path: htmlcov.zip
+        name: htmlcov
+        path: htmlcov
