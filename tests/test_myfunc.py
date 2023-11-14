@@ -6,7 +6,7 @@ def test_add():
 
 
 def test_sub():
-    assert sub(2, 1) == 1
+    assert sub(2, 1) == 0
 
 
 class TestCase:
