@@ -19,6 +19,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: 実行環境の確認
+      run: |
+        echo '1.GITHUB_REF      ' $GITHUB_REF
+        echo '2.GITHUB_REF_NAME ' $GITHUB_REF_NAME
+        echo '3.GITHUB_BASE_REF ' $GITHUB_BASE_REF
+        echo '4.GITHUB_PATH     ' $GITHUB_PATH
+
     - uses: actions/checkout@v4
 
     - name: Set up Python 3.10
