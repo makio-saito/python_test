@@ -44,6 +44,7 @@ jobs:
       run: |
         pwd
         ls -la
+        ls -la ~
         pytest tests -v --cov=src --cov-report=html
       continue-on-error: true
 
