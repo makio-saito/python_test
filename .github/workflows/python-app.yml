@@ -23,10 +23,9 @@ jobs:
       run: |
         echo 'GITHUB_REF      ' $GITHUB_REF
         echo 'GITHUB_REF_NAME ' $GITHUB_REF_NAME
-        echo 'GITHUB_BASE_REF ' $GITHUB_BASE_REF
-        echo 'GITHUB_PATH     ' $GITHUB_PATH
         echo 'GITHUB_HEAD_REF ' $GITHUB_HEAD_REF
         echo 'GITHUB_BASE_REF ' $GITHUB_BASE_REF
+        echo 'GITHUB_PATH     ' $GITHUB_PATH
         pwd
 
     - uses: actions/checkout@v4
