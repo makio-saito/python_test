@@ -26,8 +26,6 @@ jobs:
         echo 'GITHUB_HEAD_REF ' $GITHUB_HEAD_REF
         echo 'GITHUB_BASE_REF ' $GITHUB_BASE_REF
         echo 'GITHUB_PATH     ' $GITHUB_PATH
-        pwd
-        ls -la
 
     - uses: actions/checkout@v4
 
@@ -44,6 +42,8 @@ jobs:
     - name: Test with pytest
       id: unit_test
       run: |
+        pwd
+        ls -la
         pytest tests -v --cov=src --cov-report=html
       continue-on-error: true
 
