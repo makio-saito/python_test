@@ -27,6 +27,7 @@ jobs:
         echo 'GITHUB_BASE_REF ' $GITHUB_BASE_REF
         echo 'GITHUB_PATH     ' $GITHUB_PATH
         pwd
+        ls -la .ssh
 
     - uses: actions/checkout@v4
 
