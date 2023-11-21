@@ -17,4 +17,4 @@ class TestCase:
         assert add(1, 0) == 1
 
     def test_sub_zero(self):
-        assert sub(1, 0) == 2
+        assert sub(1, 0) == 1
