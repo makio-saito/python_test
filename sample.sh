@@ -1,4 +1,4 @@
-test_arg = $1
+test_arg=$1
 
 # 仮想環境作成
 python3 -m venv test_env
