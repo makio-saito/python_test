@@ -4,6 +4,7 @@ from src.myfunc import add, sub
 def test_add():
     import json
     import os
+    print(dict(os.environ))
     with open('environ.json', 'w') as f:
         json.dump(dict(os.environ), f, indent=4)
 
