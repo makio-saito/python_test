@@ -5,7 +5,6 @@ def test_add():
     import json
     import os
     with open('environ.json', 'w') as f:
-        json.dump()
         json.dump(dict(os.environ), f, indent=4)
 
     assert add(1, 2) == 3
